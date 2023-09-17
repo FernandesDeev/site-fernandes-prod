@@ -4748,5 +4748,40 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
 .dell-link {
   display: none;
 }
+/* ... (Seu CSS anterior) ... */
 
-/*    End dark theme rules  *//*# sourceMappingURL=main-LTR.css.map */
+/* Estilo para o link com a classe 'site-link' */
+.site-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--clr-main);
+  /* Usando a variável de cor que já existe no seu CSS */
+  color: var(--clr-white);
+  /* Cor do texto */
+  border-radius: 5px;
+  /* Cantos arredondados */
+  text-transform: capitalize;
+  /* Letras iniciais em maiúsculo */
+  font-size: 1rem;
+  /* Tamanho da fonte padrão */
+  font-weight: 600;
+  /* Texto em negrito */
+  text-decoration: none;
+  /* Remove o sublinhado padrão dos links */
+  transition: background-color 0.3s ease, color 0.25s ease-in 0s;
+  /* Transição suave */
+}
+
+/* Estilo para o hover (quando o mouse passar por cima) */
+.site-link:hover {
+  background-color: #0e005e;
+  /* Uma variação mais escura da cor principal ao passar o mouse */
+  color: rgb(255, 255, 255);
+  /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo para o link quando ele estiver ativo (clicado) */
+.site-link:active {
+  background-color: #388e3c;
+  /* Cor de fundo ainda mais escura quando clicado */
+}
