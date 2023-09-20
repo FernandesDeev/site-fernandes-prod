@@ -725,3 +725,15 @@ $(function () {
     End Vendors plugins options Area 
      ******************************** */
 });
+
+// desenvolvimento web 
+const typebotInitScript = document.createElement("script");
+typebotInitScript.type = "module";
+typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.1.13/dist/web.js'
+
+Typebot.initPopup({
+  typebot: "desenvolvimento-web-rceipwh",
+  apiHost: "https://viewer-production-49e6.up.railway.app",
+});
+`;
+document.body.append(typebotInitScript);
